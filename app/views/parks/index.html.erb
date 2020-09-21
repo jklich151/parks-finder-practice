@@ -1,0 +1,9 @@
+<h1><%= park_results.park_count %> National Parks</h1>
+<% park_results.parks.each do |park| %>
+  <ul class="park_info">
+    <li class="name"><%= park.name %></li>
+    <li class="description"><%= park.description %></li>
+    <li class="directionsInfo"><%= park.directionsInfo %></li>
+    <li class="standardHours"><%= park.standardHours %></li>
+  </ul>
+<% end %>
